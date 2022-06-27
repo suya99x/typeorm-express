@@ -10,5 +10,5 @@ const userToRemove = await userRepository.findOneBy({
 })
 await userRepository.remove(userToRemove)
 console.log("user has been deleted")
-    res.send(userRepository);
+    res.send(userToRemove);
 }
